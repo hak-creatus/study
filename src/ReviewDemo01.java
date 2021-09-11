@@ -10,13 +10,13 @@ public class ReviewDemo01 {
 
         int cnt = 0;
 
-        for (int i = 1; i <= number; i ++)
+        for (int i = 2; i < number; i ++)
         {
             if(number % i == 0)
                 cnt++;
         }
 
-        if(cnt == 2)
+        if(cnt == 0) // 카운트 0이면 true
             System.out.println(number + "는 소수");
         else
             System.out.println(number + "는 소수가 아님");
