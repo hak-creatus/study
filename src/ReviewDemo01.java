@@ -10,17 +10,19 @@ public class ReviewDemo01 {
 
         boolean isPrime = true;
 
-        for (int i = 2; i < number; i ++)
+        int i = 2;
+        while (i < number)
         {
             if(number % i == 0)
             {
                 isPrime = false;
-                System.out.println("*" + i + "*");
+                //System.out.println("*" + i + "*");
                 break; //첫번째 나누어 떨어질 때 break!
             }
             else
-                System.out.print(i + " ");
+                //ystem.out.print(i + " ");
 
+            i++;
         }
 
         if(isPrime) // isPrime 변수 값이 true 면
