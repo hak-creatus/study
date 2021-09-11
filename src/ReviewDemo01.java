@@ -13,7 +13,14 @@ public class ReviewDemo01 {
         for (int i = 2; i < number; i ++)
         {
             if(number % i == 0)
+            {
                 isPrime = false;
+                System.out.println("*" + i + "*");
+                break; //첫번째 나누어 떨어질 때 break!
+            }
+            else
+                System.out.print(i + " ");
+
         }
 
         if(isPrime) // isPrime 변수 값이 true 면
