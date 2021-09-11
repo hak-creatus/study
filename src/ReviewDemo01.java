@@ -8,15 +8,15 @@ public class ReviewDemo01 {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
 
-        int cnt = 0;
+        boolean isPrime = true;
 
         for (int i = 2; i < number; i ++)
         {
             if(number % i == 0)
-                cnt++;
+                isPrime = false;
         }
 
-        if(cnt == 0) // 카운트 0이면 true
+        if(isPrime) // isPrime 변수 값이 true 면
             System.out.println(number + "는 소수");
         else
             System.out.println(number + "는 소수가 아님");
